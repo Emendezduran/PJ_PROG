@@ -23,7 +23,7 @@ public class Juego_Ahorcado implements Game {
     }
 
     static Scanner scan = new Scanner(System.in);
-    static String[] palabras = { "casa"};
+    static String[] palabras = {"casa"};
     String palabra;
     char[] palabraOculta;
     int contador;
@@ -31,7 +31,7 @@ public class Juego_Ahorcado implements Game {
 
     @Override
     public void startGame() {
-        System.out.println(palabra);
+       //System.out.println(palabra);
         while (!gameOver()) {
             System.out.println("RONDA " + contador);
             System.out.println(TMAX - contador);
@@ -49,7 +49,7 @@ public class Juego_Ahorcado implements Game {
     
     public Juego_Ahorcado() {
         this.palabra = palabraAleatoria();
-        this.palabraOculta = OcultarPalabra();
+        this.palabraOculta = ocultarPalabra();
         contador = 0;
     }
 
@@ -59,7 +59,7 @@ public class Juego_Ahorcado implements Game {
         return palabraRand;
     }
 
-    public char[] OcultarPalabra() {
+    public char[] ocultarPalabra() {
 
         char[] letras = palabra.toCharArray();
         char[] letrasOcultas = new char[letras.length];
@@ -70,7 +70,7 @@ public class Juego_Ahorcado implements Game {
     }
 
     public char capturarLetra() {
-        imput
+        //imput
         System.out.println("Introduce una letra: ");
         char letraJugada = Character.toLowerCase(scan.next().charAt(0));
         return letraJugada;

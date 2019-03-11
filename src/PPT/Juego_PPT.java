@@ -7,12 +7,6 @@ import javax.swing.JOptionPane;
 import proto.Game;
 
 public class Juego_PPT implements Game {
-    
-        public static void main(String[] args){
-     
-        Juego_PPT j = new Juego_PPT();
-        j.startGame();
-    }
 
     Scanner scan = new Scanner(System.in);
 
